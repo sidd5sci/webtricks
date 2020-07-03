@@ -1,12 +1,12 @@
 
-# [WebTricks](https://sidd5sci.github.io/fw_slider/)
+# [WebTricks](https://sidd5sci.github.io/webtricks/)
 
 ### webTricks is collection of cool, fancy and eligant style for web developers
 
 [![Build Status](https://travis-ci.org/tommyod/KDEpy.svg?branch=master)](https://travis-ci.org/tommyod/KDEpy)
 ## Live Demos
 
-* [Dark popup](https://sidd5sci.github.io/fw_slider/docs/index.html)
+* [Dark popup](https://sidd5sci.github.io/webtricks/popup.html)
 * [FW Slider](https://sidd5sci.github.io/fw_slider/)
 
 
