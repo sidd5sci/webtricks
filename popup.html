@@ -1,0 +1,71 @@
+<doctype>
+<html>
+    <head>
+        <title>Popup</title>
+        <link rel="stylesheet" href="assets/css/main.css"/>
+        <link rel="stylesheet" href="assets/cssprettify.css"/>
+    </head>
+    <body>
+
+        <!-- start model -->
+        <div class="model">
+            <div class="model-dialog">
+                <div class="model-dialog-header">
+                    <div class="header-icon">
+                        <img src="assets/vectors/vectorpaint.svg">
+                    </div>
+                    <span class="header-text">JAVASCRIPT</span>
+                    <div class="toggle-icon" onclick="toggle(this);">
+                        <img src="assets/vectors/vectorpaint-arrow.svg">
+                    </div>
+                </div>
+                <div class="model-dialog-body" id="body" aria-expanded="true">
+                    <pre class="prettyprint" style="border:0;">
+                        
+    class Employee extends User{
+
+        empCode ;
+
+        constructor(name,empCode){
+            super(name);
+            this.empCode = empCode;
+        }
+
+        getData = () => {
+            return this.name,this.empCode;
+        }
+    }
+                    </pre>
+                </div>
+                <div class="model-dialog-footer">
+
+                </div>
+            </div>
+        </div>
+        <!-- end model -->
+
+<!-- <script src="assests/js/prettify.js"></script>
+<script>
+    window.onload = (function(){ prettyPrint(); });
+</script> -->
+<script>
+function toggle(el){
+
+    let img = el.children[0];
+    img.classList.toggle('reverse-icon');
+    
+    let body = document.getElementById('body');
+
+    if (body.getAttribute('aria-expanded') == "true") {
+        body.style.maxHeight = '0px';
+        body.setAttribute('aria-expanded',false)
+    } else { 
+        body.style.maxHeight = '2200px'; 
+        body.setAttribute('aria-expanded',true)
+    }
+}
+
+</script>
+    
+</body>
+</html>
