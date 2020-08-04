@@ -192,7 +192,10 @@ Pricing table
     text-align: center;
 }
 .column-item-list li{
-    line-height: 1.5;
+    line-height: 2;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
 }
 .price-column.active .column-item-list li{
     color:#fff;
