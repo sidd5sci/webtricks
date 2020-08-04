@@ -127,13 +127,15 @@ Pricing table
 
 .pricing-table{
     display: flex;
-    background:#555555;
+    background:#555;
     width: 90%;
     margin: auto;
     margin-top: 30px;
     padding:20px;
     justify-content: center;
     align-content: center;
+    box-shadow: 0px 0px 18px 3px rgb(224, 224, 224),
+    0px 0px 50px rgb(155, 154, 154);
 }
 .price-column{
     width:250px;
