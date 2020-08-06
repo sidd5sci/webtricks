@@ -244,3 +244,28 @@ Pricing table
     border:1px solid #fff;
     transition-duration: 600ms;
 }
+
+/*
+Lists
+=====================
+*/
+.fp-list-container{
+    width:60%;
+    background: rgba(204, 204, 204,.5);
+    margin:auto;
+    margin-top:100px;
+    padding: 20px;
+}
+.fp-list-block{
+    list-style: none;
+}
+.fp-list-block li{
+    background: #ffffff;
+    margin:10px 0px 10px 0px;
+    padding:5px;
+}
+.fp-list-item-icon{
+    width:50px;
+    height:50px;
+    display: inline-block;
+}
