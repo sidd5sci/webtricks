@@ -255,17 +255,67 @@ Lists
     margin:auto;
     margin-top:100px;
     padding: 20px;
+    box-shadow: 0px 0px 25px #555;
 }
 .fp-list-block{
     list-style: none;
 }
 .fp-list-block li{
     background: #ffffff;
-    margin:10px 0px 10px 0px;
+    margin:0px 0px 0px 0px;
     padding:5px;
+    text-align: left;
+    vertical-align: text-top;
+    position: relative;
+    border-bottom: 1px solid #ccc;
 }
-.fp-list-item-icon{
-    width:50px;
-    height:50px;
+.fp-list-block li.active{
+    background:#83c8ff;
+    color:#fff;
+}
+.fp-list-block li.disabled{
+    background: #d8d8d8;
+    color: rgb(187 187 187);
+    cursor: not-allowed;
+}
+.fp-list-block li.disabled:hover{
+    background: #d8d8d8;
+    color: rgb(187 187 187);
+    cursor: not-allowed;
+}
+.fp-list-block li:hover{
+    background:#83c8ff;
+    color:#fff;
+}
+
+.fp-list-block li img{
+    width:30px;
+    height:30px;
     display: inline-block;
+    margin-right: 10px;
+    margin-left: 5px;
+    /* border: 2px solid #333;
+    border-radius: 50%; */
 }
+
+.fp-list-block li p{
+    vertical-align: super;
+    display: inline;
+
+}
+
+.badge{
+    padding: 0px 5px;
+    border-radius: 40px;
+    position: absolute;
+}
+.badge.list-badge{
+    /* background: #ff5757; */
+    background: #008eff;
+    color:#fff;
+    font-weight: bold;
+    font-size: 12px;
+    right:15px;
+    top:10px;
+}
+
