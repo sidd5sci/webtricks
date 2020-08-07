@@ -1,15 +1,32 @@
+body{
+    background:rgb(161, 0, 201);
+}
 /*
 Cards
 ======================
 */
 .card-container{
     width:60%;
-    background: rgba(204, 204, 204,.5);
+    /* background: rgba(204, 204, 204,.0); */
     margin:auto;
     margin-top:100px;
     padding: 20px;
     box-shadow: 0px 0px 25px #555;
     display: flex;
+    border-radius: 20px;
+    position: relative;
+}
+.card-container::before{
+    background: #ffffff9a;
+    content: '';
+    width: 100%;
+    top:0;
+    left:0px;
+    bottom: 0;
+    z-index: 0;
+    position: absolute;
+    border-radius: 20px;
+    filter: blur(5);
 }
 .card{
     background: #727272;
@@ -68,17 +85,24 @@ Cards
 }
 .btn-addCart{
     background:#333;
+    border: 1px solid #333;
     padding: 10px 30px;
     border-radius: 25px;
     text-decoration: none;
     color:#fff;
     font-family: Arial, Helvetica, sans-serif;
 }
+.btn-addCart:hover {
+    /* filter:blur(1px); */
+    background: none;
+}
 .btn-primary{
     background: #0350f7;
+    border: 1px solid #0350f7;
 }
 .btn-secondary{
     background: #08e400;
+    border: 1px solid  #08e400;
 }
 .discount{
     position: absolute;
