@@ -9,6 +9,8 @@
 * [Dark popup](https://sidd5sci.github.io/webtricks/popup.html)
 * [FW Slider](https://sidd5sci.github.io/fw_slider/)
 * [Pricing tables](https://sidd5sci.github.io/webtricks/pricing-table.html)
+* [Lists](https://sidd5sci.github.io/webtricks/lists.html)
+* [Products cards](https://sidd5sci.github.io/webtricks/cards.html)
 
 
 ## Licensing
