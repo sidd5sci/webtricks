@@ -32,10 +32,11 @@ Cards
     background: #727272;
     border-radius: 15px;
     width: 250px;
-    min-height: 300px;
+    min-height: 320px;
     position: relative;
     overflow: hidden;
     margin: 10px;
+    box-shadow: 0px 0px 10px #333;
 }
 .card::before{
     content: '';
@@ -51,26 +52,36 @@ Cards
 .card.card-primary{
     background: #333;
 }
-.card.card.card-primary::before{
+.card.card-primary::before{
     background: #0350f7;
 }
 .card.card-secondary{
     background: #333;
 }
-.card.card.card-secondary::before{
+.card.card-secondary::before{
     background: #08e400;
 }
 .card img{
     position: relative;
     width:inherit;
     z-index: 10;
+    transition-duration: 300ms;
+}
+.title{
+    width:100%;
+    text-align: center;
+    font-size: 14px;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 80px;
 }
 .price{
     text-align: center;
     color: #fff;
     font-weight: lighter;
     position: relative;
-    top: -15px;
+    bottom: 5px;
     font-size: 19px;
     font-family: Arial;
 }
@@ -81,7 +92,8 @@ Cards
 .buttons{
     width:100%;
     text-align: center;
-    margin-bottom: 1em;
+    position: absolute;
+    bottom: 20px;
 }
 .btn-addCart{
     background:#333;
@@ -120,4 +132,133 @@ Cards
     position: absolute;
     top: 4px;
     left: 2px;
+}
+
+
+
+.card-1::before{
+    content: '';
+    background: #333;
+    position: absolute;
+    height: 300px;
+    width: 450px;
+    border-radius: 0px !important;
+    transform: rotate(30deg);
+    right: -105px;
+    top: -176px;
+    z-index: 1;
+    transition-duration: 300ms;
+
+}
+.card-1 .title{
+    bottom: 15px;
+    font-size: 20px;
+    transition-duration: 300ms;
+}
+.card-1:hover >.title{
+    bottom:80px;
+    font-size: 14px;
+    transition-duration: 300ms;
+
+}
+.card-1 .buttons{
+    position: absolute;
+    bottom: -50px;
+    transition-duration: 300ms;
+}
+.card-1:hover >.buttons{
+    bottom:20px;
+    transition-duration: 300ms;
+}
+.card-1:hover::before{
+    transform: rotate(-20deg);
+    transition-duration: 300ms;
+}
+.card-1:hover >img{
+    transition-duration: 300ms;
+    transform: scale(0.8);
+}
+
+.card-2::before{
+    content: '';
+    background: #333;
+    position: absolute;
+    height: 300px;
+    width: 450px;
+    border-radius: 0px !important;
+    transform: rotate(-30deg);
+    /* right: -105px; */
+    top: -176px;
+    z-index: 1;
+    transition-duration: 300ms;
+
+}
+.card-2 .title{
+    bottom: 15px;
+    font-size: 20px;
+    transition-duration: 300ms;
+}
+.card-2:hover >.title{
+    bottom:80px;
+    font-size: 14px;
+    transition-duration: 300ms;
+
+}
+.card-2 .buttons{
+    position: absolute;
+    bottom: -50px;
+    transition-duration: 300ms;
+}
+.card-2:hover >.buttons{
+    bottom:20px;
+    transition-duration: 300ms;
+}
+.card-2:hover::before{
+    transform: rotate(20deg);
+    transition-duration: 300ms;
+}
+.card-2:hover >img{
+    transition-duration: 300ms;
+    transform: scale(0.8);
+}
+.card-3::before{
+    content: '';
+    background: #333;
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    border-radius: 0px !important;
+    transform: rotate(60deg);
+    top: -156px;
+    z-index: 1;
+    filter:blur(50px);
+    transition-duration: 300ms;
+}
+.card-3 .title{
+    bottom: 15px;
+    font-size: 20px;
+    transition-duration: 300ms;
+}
+.card-3:hover >.title{
+    bottom:80px;
+    font-size: 14px;
+    transition-duration: 300ms;
+
+}
+.card-3 .buttons{
+    position: absolute;
+    bottom: -50px;
+    transition-duration: 300ms;
+}
+.card-3:hover >.buttons{
+    bottom:20px;
+    transition-duration: 300ms;
+}
+.card-3:hover::before{
+    transform: rotate(20deg);
+    transition-duration: 300ms;
+}
+.card-3:hover >img{
+    transition-duration: 300ms;
+    transform: scale(0.8);
 }
