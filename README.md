@@ -1,7 +1,7 @@
 
 # [WebTricks](https://sidd5sci.github.io/webtricks/)
 
-### webTricks is collection of cool, fancy and eligant style for web developers
+### webTricks is a free UI-kit with builtin ui components for cross plateform development of web, android, ios, desktop 
 
 [![Build Status](https://travis-ci.org/tommyod/KDEpy.svg?branch=master)](https://travis-ci.org/tommyod/KDEpy)
 ## Live Demos
@@ -15,7 +15,7 @@
 
 ## Licensing
 
-FW SLIDER is licensed under the [MIT license](LICENSE).
+WebTricks licensed under the [MIT license](LICENSE).
 
 ![MIT License](https://danielmiessler.com/images/mitlicense.png)
 
