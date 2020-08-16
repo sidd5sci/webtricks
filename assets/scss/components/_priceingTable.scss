@@ -1,0 +1,125 @@
+
+/* 
+Pricing table
+=============================
+*/
+
+.pricing-table{
+    display: flex;
+    background:#555;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    padding:20px;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0px 0px 18px 3px rgb(224, 224, 224),
+    0px 0px 50px rgb(155, 154, 154);
+}
+.price-column{
+    width:250px;
+    background: #ffffff;
+    min-width: 100px;
+    min-height: 500px;
+    margin-left:10px;
+    padding: 10px;
+    position: relative;
+} 
+.price-column.active{
+    width:280px;
+    background: #ff5757;
+    margin-top:-15px;
+    margin-bottom: 15px;
+} 
+.column-img{
+    height: 90px;
+    width: 90px;
+    /* border-radius: 50%; */
+    /* border: solid #000 2px; */
+    margin-left: calc(50% - 50px);
+    margin-top: 20px;
+}
+.column-heading{
+    font-size: 30px;
+    font-weight: bold;
+    font: caption;
+    text-align: center;
+    margin: 10px 0px 10px 0;
+    text-transform: uppercase;
+    /* display: none; */
+}
+.price-column.active .column-heading{
+    color:#fff;
+}
+.column-price{
+    text-align: center;
+    font-size: 80px;
+    font-family: arial;
+    color: #ff5757;
+    font-weight: lighter;
+    margin-top: 8px;
+}
+.column-price span{
+    font-size:20px;
+}
+.price-column.active .column-price{
+    color: #fff;
+}
+.column-item-list{
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+}
+.column-item-list li{
+    line-height: 2;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+}
+.price-column.active .column-item-list li{
+    color:#fff;
+}
+.column-horizontal-gap{
+    min-height: 1px;
+    width: 50%;
+    background: #ccc;
+    margin:auto;
+}
+.btn-box{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px !important;
+    position: absolute;
+    left:0;
+    bottom:50px;
+}
+.btn{
+
+}
+.btn.btn-go{
+    background: #ff5757;
+    padding: 10px 40px 10px 40px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 800;
+    font: caption;
+    border: 1px solid #ff5757;
+}
+.btn-go:hover{
+    color:#ff5757;
+    background: none;
+    border:1px solid #ff5757;
+    transition-duration: 600ms;
+}
+.price-column.active .btn-go{
+    color:#fff;
+    background: none;
+    border:1px solid #fff;
+    transition-duration: 600ms;
+}
+.price-column.active .btn-go:hover{
+    color:#ff5757;
+    background: #fff;
+    border:1px solid #fff;
+    transition-duration: 600ms;
+}
