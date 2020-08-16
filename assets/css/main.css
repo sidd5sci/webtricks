@@ -372,9 +372,148 @@ Lists
 Headers
 ===============================
 */
-nav {
+.nav {
   width: 100%;
   background: #eeeeee;
   min-height: 70px;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.nav.nav-left .brand {
+  left: unset;
+  right: 140px !important;
+}
+
+.nav.nav-left .navigation {
+  left: 100px;
+  right: unset;
+}
+
+.nav.nav-center-menu .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav.nav-center-menu .navigation {
+  position: static;
+  margin: auto;
+}
+
+.nav.nav-center-menu .navigation li ul {
+  margin-top: 20px;
+}
+
+.nav.nav-dual .navigation {
+  position: static;
+  margin-left: 16%;
+}
+
+.nav.nav-dual .navigation li ul {
+  margin-top: 20px;
+}
+
+.nav.nav-dual .social {
+  list-style: none;
+  position: absolute;
+  right: 150px;
+  top: 35px;
+}
+
+.nav.nav-dual .social li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.nav.nav-dual .social li img {
+  height: 15px;
+  width: 15px;
+}
+
+.nav.nav-dual .social li button {
+  vertical-align: top;
+}
+
+.nav.nav-dual-1 .navigation {
+  position: static;
+  margin-left: 16%;
+}
+
+.nav.nav-dual-1 .navigation li ul {
+  margin-top: 20px;
+}
+
+.nav.nav-dual-1 .social {
+  list-style: none;
+  position: absolute;
+  right: 150px;
+  top: 20px;
+}
+
+.nav.nav-dual-1 .social li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.nav.nav-dual-1 .social li img {
+  height: 15px;
+  width: 15px;
+}
+
+.nav .brand {
+  position: absolute;
+  left: 100px;
+}
+
+.nav .brand a {
+  text-decoration: none;
+  color: #377dc5;
+  font-size: 30px;
+  font-family: arial;
+  text-transform: uppercase;
+}
+
+.nav .navigation {
+  position: absolute;
+  right: 100px;
+  top: 24px;
+  list-style: none;
+}
+
+.nav .navigation li {
+  display: inline-block;
+  margin-right: 2em;
+  font-size: 18px;
+  font-family: Arial;
+  font-weight: 100;
+  color: #a0a0a0;
+}
+
+.nav .navigation li ul {
+  display: none;
+  position: absolute;
+  top: 20px;
+  max-width: 200px;
+}
+
+.nav .navigation li ul li {
+  display: block;
+  padding: 5px 10px;
+  background: rgba(0, 0, 0, 0.3);
+  min-width: 200px;
+}
+
+.nav .navigation li ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav .navigation li ul li:hover {
+  background: #377dc5cc;
+}
+
+.nav .navigation li:hover ul {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */

@@ -3,9 +3,152 @@
 Headers
 ===============================
 */
-nav{
+.nav{
     width:100%;
     background: #eeeeee;
     min-height: 70px;
+    position: relative;
+    margin-bottom: 100px;
+    
+    &.nav-left{
+        .brand{
+            left: unset;
+            right:140px !important;
+        }
+        .navigation{
+            left:100px;
+            right: unset;
+        }
+    }
+
+    &.nav-center-menu{
+        .container{
+            display: flex;
+        }
+        .navigation{
+            position: static;
+            margin: auto;
+            li{
+                ul{
+                    margin-top:20px;
+                }
+            }
+        }
+        
+    }
+
+    &.nav-dual{
+        .navigation{
+            position: static;
+            margin-left: 16%;
+            li{
+                ul{
+                    margin-top:20px;
+                }
+            }
+        }
+
+        .social{
+            list-style: none;
+            position: absolute;
+            right: 150px;
+            top: 35px;
+
+            li{
+                display: inline;
+                margin-right: 10px;
+                img{
+                    height: 15px;
+                    width: 15px;
+                }
+                button{
+                    vertical-align: top;
+                }
+            }
+        }
+    }
+
+    &.nav-dual-1{
+        .navigation{
+            position: static;
+            margin-left: 16%;
+            li{
+                ul{
+                    margin-top:20px;
+                }
+            }
+        }
+
+        .social{
+            list-style: none;
+            position: absolute;
+            right: 150px;
+            top: 20px;
+
+            li{
+                display: inline;
+                margin-right: 10px;
+                img{
+                    height: 15px;
+                    width: 15px;
+                }
+            }
+        }
+    }
+
+    .brand{
+        position: absolute;
+        left:100px;
+
+        a{
+            text-decoration: none;
+            color: #377dc5;
+            font-size: 30px;
+            font-family: arial;
+            text-transform: uppercase;
+        }
+    }
+
+    .navigation{
+        position: absolute;
+        right: 100px;
+        top:24px;
+        list-style: none;
+        li{
+            display: inline-block;
+            margin-right: 2em;
+            font-size: 18px;
+            font-family: Arial;
+            font-weight: 100;
+            color: #a0a0a0;
+            ul{
+                display: none;
+                position: absolute;
+                top:20px;
+                max-width: 200px;
+                li{
+                    display: block;
+                    padding: 5px 10px;
+                    background:rgba(0,0,0,.3);
+                    min-width: 200px;
+
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                    
+                }
+                li:hover{
+                    background:#377dc5cc;
+                }
+            }
+        }
+        li:hover{
+            ul{
+                display: block;
+                
+            }
+        }
+    }
 
 }
