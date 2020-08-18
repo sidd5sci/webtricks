@@ -390,75 +390,51 @@ Headers
   right: unset;
 }
 
-.nav.nav-center-menu .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .nav.nav-center-menu .navigation {
   position: static;
   margin: auto;
+  margin-top: 1.6em;
 }
 
 .nav.nav-center-menu .navigation li ul {
   margin-top: 20px;
 }
 
-.nav.nav-dual .navigation {
+.nav.nav-flex .brand {
   position: static;
-  margin-left: 16%;
+  margin-top: 17px;
 }
 
-.nav.nav-dual .navigation li ul {
+.nav.nav-flex .navigation {
+  position: static;
+  margin: auto;
+  margin-top: 1.6em;
+}
+
+.nav.nav-flex .navigation li ul {
   margin-top: 20px;
 }
 
-.nav.nav-dual .social {
+.nav.nav-flex .social {
   list-style: none;
   position: absolute;
-  right: 150px;
-  top: 35px;
+  right: 100px;
+  top: 25px;
 }
 
-.nav.nav-dual .social li {
+.nav.nav-flex .social li {
   display: inline;
   margin-right: 10px;
 }
 
-.nav.nav-dual .social li img {
+.nav.nav-flex .social li img {
   height: 15px;
   width: 15px;
 }
 
-.nav.nav-dual .social li button {
-  vertical-align: top;
-}
-
-.nav.nav-dual-1 .navigation {
-  position: static;
-  margin-left: 16%;
-}
-
-.nav.nav-dual-1 .navigation li ul {
-  margin-top: 20px;
-}
-
-.nav.nav-dual-1 .social {
-  list-style: none;
-  position: absolute;
-  right: 150px;
-  top: 20px;
-}
-
-.nav.nav-dual-1 .social li {
-  display: inline;
-  margin-right: 10px;
-}
-
-.nav.nav-dual-1 .social li img {
-  height: 15px;
-  width: 15px;
+.nav.nav-flex .social li .btn-nav {
+  position: relative;
+  top: -5px;
 }
 
 .nav .brand {
