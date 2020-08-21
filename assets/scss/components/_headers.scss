@@ -16,8 +16,16 @@ Headers
             right:140px !important;
         }
         .navigation{
-            left:100px;
-            right: unset;
+            position: absolute;
+            right:0px;
+            li{
+                ul{
+                    margin-top:20px;
+                }
+                .btn-nav{
+                    position: relative ;
+                }
+            }
         }
     }
 
@@ -26,17 +34,20 @@ Headers
         .navigation{
             position: static;
             margin: auto;
+            // margin-top:17px;
             margin-top:1.6em;
             li{
                 ul{
                     margin-top:20px;
                 }
+                .btn-nav{
+                    position: absolute !important;
+                    top: 15px;
+                }
             }
         }
         
     }
-
-    
 
     &.nav-flex{
         .brand{
@@ -51,6 +62,10 @@ Headers
             li{
                 ul{
                     margin-top:20px;
+                }
+                .btn-nav{
+                    position: absolute !important;
+                    top: 15px;
                 }
             }
         }
@@ -68,7 +83,7 @@ Headers
                     width: 15px;
                 }
                 .btn-nav{
-                    position: relative;
+                    position: relative !important;
                     top: -5px;
                 }
             }
@@ -76,8 +91,8 @@ Headers
     }
 
     .brand{
-        position: absolute;
-        left:100px;
+        position: static;
+        margin-top: 17px;
 
         a{
             text-decoration: none;
@@ -89,9 +104,9 @@ Headers
     }
 
     .navigation{
-        position: absolute;
-        right: 100px;
-        top:24px;
+        position: static;
+        margin: auto;
+        margin-top: 1.6em;
         list-style: none;
         li{
             display: inline-block;

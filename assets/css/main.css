@@ -386,8 +386,16 @@ Headers
 }
 
 .nav.nav-left .navigation {
-  left: 100px;
-  right: unset;
+  position: absolute;
+  right: 0px;
+}
+
+.nav.nav-left .navigation li ul {
+  margin-top: 20px;
+}
+
+.nav.nav-left .navigation li .btn-nav {
+  position: relative;
 }
 
 .nav.nav-center-menu .navigation {
@@ -398,6 +406,11 @@ Headers
 
 .nav.nav-center-menu .navigation li ul {
   margin-top: 20px;
+}
+
+.nav.nav-center-menu .navigation li .btn-nav {
+  position: absolute !important;
+  top: 15px;
 }
 
 .nav.nav-flex .brand {
@@ -413,6 +426,11 @@ Headers
 
 .nav.nav-flex .navigation li ul {
   margin-top: 20px;
+}
+
+.nav.nav-flex .navigation li .btn-nav {
+  position: absolute !important;
+  top: 15px;
 }
 
 .nav.nav-flex .social {
@@ -433,13 +451,13 @@ Headers
 }
 
 .nav.nav-flex .social li .btn-nav {
-  position: relative;
+  position: relative !important;
   top: -5px;
 }
 
 .nav .brand {
-  position: absolute;
-  left: 100px;
+  position: static;
+  margin-top: 17px;
 }
 
 .nav .brand a {
@@ -451,9 +469,9 @@ Headers
 }
 
 .nav .navigation {
-  position: absolute;
-  right: 100px;
-  top: 24px;
+  position: static;
+  margin: auto;
+  margin-top: 1.6em;
   list-style: none;
 }
 
