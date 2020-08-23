@@ -149,7 +149,7 @@ Pricing table
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #555;
+  background: #fff;
   width: 90%;
   margin: auto;
   margin-top: 30px;
@@ -161,6 +161,8 @@ Pricing table
       align-content: center;
   -webkit-box-shadow: 0px 0px 18px 3px #e0e0e0, 0px 0px 50px #9b9a9a;
           box-shadow: 0px 0px 18px 3px #e0e0e0, 0px 0px 50px #9b9a9a;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .pricing-table.rounded .price-column {
@@ -172,15 +174,9 @@ Pricing table
   border: 2px solid #ffffff;
 }
 
-.pricing-table.highlighed .header {
-  overflow: hidden;
-  position: relative;
-  z-index: 5;
-}
-
 .pricing-table.highlighed .header::before {
   content: '';
-  background: #fa8585;
+  background: #efefef;
   position: absolute;
   top: -68px;
   left: 35px;
@@ -193,8 +189,49 @@ Pricing table
 }
 
 .pricing-table.highlighed .price-column.active .header::before {
-  background: #df7676;
+  background: #fd7575;
   left: 50px;
+}
+
+.pricing-table.striped .column-item-list li:nth-child(odd) {
+  background: #efefef;
+}
+
+.pricing-table.striped .price-column.active .column-item-list li:nth-child(odd) {
+  background: #fd7575 !important;
+}
+
+.pricing-table.text-only .price-column {
+  padding: 0px !important;
+}
+
+.pricing-table.text-only .price-column .header {
+  background: #ff5757;
+}
+
+.pricing-table.text-only .price-column .header .column-heading {
+  font-size: 35px;
+  color: #fff;
+}
+
+.pricing-table.text-only .price-column .header p {
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pricing-table.text-only .price-column.text-center li {
+  text-align: center !important;
+}
+
+.pricing-table.text-only .price-column.active .header .column-heading {
+  color: #fff;
+}
+
+.pricing-table.table-icons .price-column .column-item-list {
+  margin-left: 20px;
+  text-align: left;
 }
 
 .pricing-table .price-column {
@@ -205,6 +242,15 @@ Pricing table
   margin-left: 10px;
   padding: 10px;
   position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.pricing-table .price-column:hover {
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+  background: #f3caca;
 }
 
 .pricing-table .price-column.active {
@@ -212,6 +258,12 @@ Pricing table
   background: #ff5757;
   margin-top: -15px;
   margin-bottom: 15px;
+}
+
+.pricing-table .price-column.active:hover {
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+  background: #d24040;
 }
 
 .pricing-table .price-column.active .column-heading {
@@ -240,6 +292,28 @@ Pricing table
   border: 1px solid #fff !important;
   -webkit-transition-duration: 600ms;
           transition-duration: 600ms;
+}
+
+.pricing-table .price-column.active .header .pin {
+  background: #fff !important;
+}
+
+.pricing-table .price-column .header {
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+
+.pricing-table .price-column .header .pin {
+  position: absolute;
+  top: -7px;
+  right: -8px;
+  background: #7effa0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  font-size: 12px;
+  /* height: 50px; */
+  padding: 25px 3px 3px 3px;
 }
 
 .pricing-table .price-column .column-img {
@@ -278,6 +352,7 @@ Pricing table
   padding: 10px;
   list-style: none;
   text-align: center;
+  margin-bottom: 120px;
 }
 
 .pricing-table .price-column .column-item-list li {
@@ -285,6 +360,13 @@ Pricing table
   font-family: 'Raleway', sans-serif;
   font-weight: lighter;
   font-size: 12px;
+  padding-left: 5px;
+}
+
+.pricing-table .price-column .column-item-list li img {
+  height: 15px;
+  width: 15px;
+  margin-right: 1em;
 }
 
 .pricing-table .price-column .btn-box {
@@ -297,6 +379,7 @@ Pricing table
 }
 
 .pricing-table .price-column .btn-box .btn-go {
+  text-decoration: none;
   background: #ff5757;
   padding: 10px 40px 10px 40px;
   border-radius: 20px;

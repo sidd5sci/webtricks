@@ -4,9 +4,18 @@ Pricing table
 =============================
 */
 
+$primary:#ff5757;
+$primary-hover:#f3caca;
+$primary-active-dull:#ccc;
+$white:#fff;
+$dark:#333;
+$light:#efefef;
+
+
+
 .pricing-table{
     display: flex;
-    background:#555;
+    background:#fff;
     width: 90%;
     margin: auto;
     margin-top: 30px;
@@ -15,29 +24,25 @@ Pricing table
     align-content: center;
     box-shadow: 0px 0px 18px 3px rgb(224, 224, 224),
     0px 0px 50px rgb(155, 154, 154);
+    box-sizing: border-box;
+
 
     &.rounded{
         .price-column{
             border-radius: 10px;
-            border:2px solid #ff5757;
+            border:2px solid $primary;
             &.active{
                 border:2px solid #ffffff;
 
             }
         }
-
     }
 
     &.highlighed{
-        .header{
-            overflow: hidden;
-            position: relative;
-            z-index: 5;
-        }
         .header::before{
             content: '';
             // background: linear-gradient(45deg, #55baea, #5e12c1);
-            background:#fa8585;
+            background:#efefef;
             position: absolute;
             top: -68px;
             left: 35px;
@@ -49,11 +54,73 @@ Pricing table
             z-index: -1;
         }
         .price-column{
+            // padding: 0px;
             &.active{
                 .header::before{
-                    background:rgb(223, 118, 118);
+                    background:#fd7575;
                     left:50px;
                 }
+            }
+        }
+    }
+
+    &.striped{
+        .column-item-list{
+            li:nth-child(odd){
+                background: #efefef;
+            }
+        }
+        .price-column{
+            &.active{
+                .column-item-list{
+                    li:nth-child(odd){
+                        background: #fd7575 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    &.text-only{
+        .price-column{
+            padding: 0px !important;
+            .header{
+                background: $primary;
+                .column-heading{
+                    font-size: 35px;
+                    color:#fff;
+                }
+                p{
+                    color:#fff;
+                    text-align: center;
+                    font-size: 12px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+            &.text-center{
+                li{
+                    text-align: center !important;
+                }
+            }
+
+            &.active{
+                .header{
+                    // background:#fff;
+                    .column-heading{
+                        // color:$primary;
+                        color:#fff;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    &.table-icons{
+        .price-column{
+            .column-item-list{
+                margin-left:20px;
+                text-align: left;
             }
         }
     }
@@ -66,13 +133,25 @@ Pricing table
         margin-left:10px;
         padding: 10px;
         position: relative;
+        overflow: hidden;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        &:hover{
+            // border:2px solid #333;
+            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+            background: #f3caca;
+        }
 
         &.active{
             width:280px;
-            background: #ff5757;
+            background: $primary;
             margin-top:-15px;
             margin-bottom: 15px;
 
+            &:hover{
+                // border:2px solid #333;
+                box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+                background: #d24040;
+            }
             .column-heading{
                 color:#fff;
             }
@@ -90,14 +169,35 @@ Pricing table
             }
             .btn-go{
                 &:hover{
-                    color:#ff5757 !important;
+                    color:$primary !important;
                     background: #fff !important;
                     border:1px solid #fff !important;
                     transition-duration: 600ms;
                 }
             }
+            .header{
+                .pin{
+                    background: #fff !important;
+                }
+            }
+
         }
 
+        .header{
+            overflow: hidden;
+            position: relative;
+            z-index: 5;
+            .pin{
+                position: absolute;
+                top: -7px;
+                right: -8px;
+                background: #7effa0;
+                transform: rotate(45deg);
+                font-size: 12px;
+                /* height: 50px; */
+                padding: 25px 3px 3px 3px;
+            }
+        }
         .column-img{
             height: 90px;
             width: 90px;
@@ -119,7 +219,7 @@ Pricing table
             text-align: center;
             font-size: 80px;
             font-family: arial;
-            color: #ff5757;
+            color: $primary;
             font-weight: lighter;
             margin-top: 8px;
 
@@ -132,12 +232,20 @@ Pricing table
             padding: 10px;
             list-style: none;
             text-align: center;
+            margin-bottom: 120px;
 
             li{
                 line-height: 2;
                 font-family: 'Raleway', sans-serif;
                 font-weight: lighter;
                 font-size: 12px;
+                padding-left: 5px;
+
+                img{
+                    height: 15px;
+                    width: 15px;
+                    margin-right:1em;
+                }
             }
         }
         .btn-box{
@@ -149,18 +257,19 @@ Pricing table
             bottom:50px;
             
             .btn-go{
-                background: #ff5757;
+                text-decoration: none;
+                background: $primary;
                 padding: 10px 40px 10px 40px;
                 border-radius: 20px;
                 color: #fff;
                 font-weight: 800;
                 font: caption;
-                border: 1px solid #ff5757;
+                border: 1px solid $primary;
 
                 &:hover{
-                    color:#ff5757;
+                    color:$primary;
                     background: none;
-                    border:1px solid #ff5757;
+                    border:1px solid $primary;
                     transition-duration: 600ms;
                 }
             }
@@ -176,6 +285,8 @@ Pricing table
         
         
     } 
+    
+    
 }
 
 
