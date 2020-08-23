@@ -4,18 +4,29 @@ Pricing table
 =============================
 */
 
-$primary:#ff5757;
-$primary-hover:#f3caca;
-$primary-active-dull:#ccc;
+$primary:#3664fc;
+$primary-hover:#87a2fc;
+$primary-hover-active:#2a4ec7;
+$primary-active-highlight:#6588fc;
+$primary-pin:#7effa0;
+
+$red-primary:#ff5757;
+$red-primary-hover:#f3caca;
+$red-primary-hover-active:#d24040;
+$red-primary-active-highlight:#fd7575;
+$red-primary-pin:#7effa0;
+
 $white:#fff;
+$black:#000;
 $dark:#333;
 $light:#efefef;
+$grey-100:#ccc;
 
 
 
 .pricing-table{
     display: flex;
-    background:#fff;
+    background:$white;
     width: 90%;
     margin: auto;
     margin-top: 30px;
@@ -32,7 +43,7 @@ $light:#efefef;
             border-radius: 10px;
             border:2px solid $primary;
             &.active{
-                border:2px solid #ffffff;
+                border:2px solid $white;
 
             }
         }
@@ -41,8 +52,7 @@ $light:#efefef;
     &.highlighed{
         .header::before{
             content: '';
-            // background: linear-gradient(45deg, #55baea, #5e12c1);
-            background:#efefef;
+            background:$light;
             position: absolute;
             top: -68px;
             left: 35px;
@@ -57,7 +67,7 @@ $light:#efefef;
             // padding: 0px;
             &.active{
                 .header::before{
-                    background:#fd7575;
+                    background:$primary-active-highlight;
                     left:50px;
                 }
             }
@@ -67,14 +77,14 @@ $light:#efefef;
     &.striped{
         .column-item-list{
             li:nth-child(odd){
-                background: #efefef;
+                background: $light;
             }
         }
         .price-column{
             &.active{
                 .column-item-list{
                     li:nth-child(odd){
-                        background: #fd7575 !important;
+                        background: $primary-active-highlight !important;
                     }
                 }
             }
@@ -88,10 +98,10 @@ $light:#efefef;
                 background: $primary;
                 .column-heading{
                     font-size: 35px;
-                    color:#fff;
+                    color:$white;
                 }
                 p{
-                    color:#fff;
+                    color:$white;
                     text-align: center;
                     font-size: 12px;
                     font-family: Arial, Helvetica, sans-serif;
@@ -105,10 +115,10 @@ $light:#efefef;
 
             &.active{
                 .header{
-                    // background:#fff;
+                    // background:$white;
                     .column-heading{
                         // color:$primary;
-                        color:#fff;
+                        color:$white;
                     }
                     
                 }
@@ -127,7 +137,7 @@ $light:#efefef;
 
     .price-column{
         width:250px;
-        background: #ffffff;
+        background: $white;
         min-width: 100px;
         min-height: 500px;
         margin-left:10px;
@@ -136,9 +146,8 @@ $light:#efefef;
         overflow: hidden;
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
         &:hover{
-            // border:2px solid #333;
             box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
-            background: #f3caca;
+            background: $primary-hover;
         }
 
         &.active{
@@ -148,36 +157,35 @@ $light:#efefef;
             margin-bottom: 15px;
 
             &:hover{
-                // border:2px solid #333;
                 box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
-                background: #d24040;
+                background: $primary-hover-active;
             }
             .column-heading{
-                color:#fff;
+                color:$white;
             }
             .column-price{
-                color: #fff;
+                color: $white;
             }
             .column-item-list li{
-                color:#fff;
+                color:$white;
             }
             .btn-go{
-                color:#fff;
+                color:$white;
                 background: none;
-                border:1px solid #fff !important;
+                border:1px solid $white !important;
                 transition-duration: 600ms;
             }
             .btn-go{
                 &:hover{
                     color:$primary !important;
-                    background: #fff !important;
-                    border:1px solid #fff !important;
+                    background: $white !important;
+                    border:1px solid $white !important;
                     transition-duration: 600ms;
                 }
             }
             .header{
                 .pin{
-                    background: #fff !important;
+                    background: $white !important;
                 }
             }
 
@@ -189,20 +197,17 @@ $light:#efefef;
             z-index: 5;
             .pin{
                 position: absolute;
-                top: -7px;
-                right: -8px;
-                background: #7effa0;
+                top: -9px;
+                right: -9px;
+                background: $primary-pin;
                 transform: rotate(45deg);
                 font-size: 12px;
-                /* height: 50px; */
                 padding: 25px 3px 3px 3px;
             }
         }
         .column-img{
             height: 90px;
             width: 90px;
-            /* border-radius: 50%; */
-            /* border: solid #000 2px; */
             margin-left: calc(50% - 50px);
             margin-top: 20px;
         }
@@ -261,7 +266,7 @@ $light:#efefef;
                 background: $primary;
                 padding: 10px 40px 10px 40px;
                 border-radius: 20px;
-                color: #fff;
+                color: $white;
                 font-weight: 800;
                 font: caption;
                 border: 1px solid $primary;
@@ -279,7 +284,7 @@ $light:#efefef;
         .column-horizontal-gap{
             min-height: 1px;
             width: 50%;
-            background: #ccc;
+            background: $grey-100;
             margin:auto;
         }
         
