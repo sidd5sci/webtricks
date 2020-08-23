@@ -16,6 +16,48 @@ Pricing table
     box-shadow: 0px 0px 18px 3px rgb(224, 224, 224),
     0px 0px 50px rgb(155, 154, 154);
 
+    &.rounded{
+        .price-column{
+            border-radius: 10px;
+            border:2px solid #ff5757;
+            &.active{
+                border:2px solid #ffffff;
+
+            }
+        }
+
+    }
+
+    &.highlighed{
+        .header{
+            overflow: hidden;
+            position: relative;
+            z-index: 5;
+        }
+        .header::before{
+            content: '';
+            // background: linear-gradient(45deg, #55baea, #5e12c1);
+            background:#fa8585;
+            position: absolute;
+            top: -68px;
+            left: 35px;
+            width: 180px;
+            height: 173px;
+            -webkit-transform: rotate(36deg);
+            transform: rotate(45deg);
+            border-radius: 17px;
+            z-index: -1;
+        }
+        .price-column{
+            &.active{
+                .header::before{
+                    background:rgb(223, 118, 118);
+                    left:50px;
+                }
+            }
+        }
+    }
+
     .price-column{
         width:250px;
         background: #ffffff;

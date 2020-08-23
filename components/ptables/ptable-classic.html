@@ -14,10 +14,26 @@
 
             <table class="ptable">
                 <thead>
-                    <th>Fields</th>
-                    <th>column 1</th>
-                    <th>column 2</th>
-                    <th>column 3</th>
+                    <th>
+                        <div>
+                            Fields
+                        </div>
+                    </th>
+                    <th>
+                        <div class="heading">
+                            Personal
+                        </div>
+                    </th>
+                    <th>
+                        <div class="heading">
+                            Team
+                        </div>
+                    </th>
+                    <th>
+                        <div class="heading">
+                            Bussiness
+                        </div>
+                    </th>
                 </thead>
                 <tbody>
                     <tr>
@@ -53,3 +69,13 @@
 
     </body>
 </html>
+<script>
+    jQuery('td').hover(function() {
+    var t = parseInt(jQuery(this).index()) + 1;
+    jQuery('td:nth-child(' + t + ')').addClass('highlighted');
+},
+function() {
+    var t = parseInt(jQuery(this).index()) + 1;
+    jQuery('td:nth-child(' + t + ')').removeClass('highlighted');
+});
+</script>
