@@ -237,7 +237,7 @@ Pricing table
 .pricing-table .price-column {
   width: 250px;
   background: #fff;
-  min-width: 100px;
+  min-width: 170px;
   min-height: 500px;
   margin-left: 10px;
   padding: 10px;
@@ -245,6 +245,7 @@ Pricing table
   overflow: hidden;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  margin-bottom: 2em;
 }
 
 .pricing-table .price-column:hover {
@@ -318,7 +319,7 @@ Pricing table
 .pricing-table .price-column .column-img {
   height: 90px;
   width: 90px;
-  margin-left: calc(50% - 50px);
+  margin-left: calc(50% - 43px);
   margin-top: 20px;
 }
 
@@ -358,11 +359,13 @@ Pricing table
   font-weight: lighter;
   font-size: 12px;
   padding-left: 5px;
+  word-wrap: break-word;
 }
 
 .pricing-table .price-column .column-item-list li img {
   height: 15px;
   width: 15px;
+  margin-left: 1em;
   margin-right: 1em;
 }
 
@@ -384,6 +387,7 @@ Pricing table
   font-weight: 800;
   font: caption;
   border: 1px solid #3664fc;
+  white-space: nowrap;
 }
 
 .pricing-table .price-column .btn-box .btn-go:hover {
