@@ -167,7 +167,7 @@ Pricing table
 
 .pricing-table.rounded .price-column {
   border-radius: 10px;
-  border: 2px solid #3664fc;
+  border: 2px solid #3a3a3a;
 }
 
 .pricing-table.rounded .price-column.active {
@@ -189,7 +189,7 @@ Pricing table
 }
 
 .pricing-table.highlighed .price-column.active .header::before {
-  background: #6588fc;
+  background: #969696;
   left: 50px;
 }
 
@@ -198,7 +198,7 @@ Pricing table
 }
 
 .pricing-table.striped .price-column.active .column-item-list li:nth-child(odd) {
-  background: #6588fc !important;
+  background: #969696 !important;
 }
 
 .pricing-table.text-only .price-column {
@@ -206,7 +206,7 @@ Pricing table
 }
 
 .pricing-table.text-only .price-column .header {
-  background: #3664fc;
+  background: #3a3a3a;
 }
 
 .pricing-table.text-only .price-column .header .column-heading {
@@ -251,12 +251,12 @@ Pricing table
 .pricing-table .price-column:hover {
   -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
-  background: #87a2fc;
+  background: #b8b8b8;
 }
 
 .pricing-table .price-column.active {
   width: 280px;
-  background: #3664fc;
+  background: #3a3a3a;
   margin-top: -15px;
   margin-bottom: 15px;
 }
@@ -264,7 +264,7 @@ Pricing table
 .pricing-table .price-column.active:hover {
   -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
-  background: #2a4ec7;
+  background: #272727;
 }
 
 .pricing-table .price-column.active .column-heading {
@@ -288,7 +288,7 @@ Pricing table
 }
 
 .pricing-table .price-column.active .btn-go:hover {
-  color: #3664fc !important;
+  color: #3a3a3a !important;
   background: #fff !important;
   border: 1px solid #fff !important;
   -webkit-transition-duration: 600ms;
@@ -337,7 +337,7 @@ Pricing table
   text-align: center;
   font-size: 80px;
   font-family: arial;
-  color: #3664fc;
+  color: #3a3a3a;
   font-weight: lighter;
   margin-top: 8px;
 }
@@ -380,20 +380,20 @@ Pricing table
 
 .pricing-table .price-column .btn-box .btn-go {
   text-decoration: none;
-  background: #3664fc;
+  background: #3a3a3a;
   padding: 10px 40px 10px 40px;
   border-radius: 20px;
   color: #fff;
   font-weight: 800;
   font: caption;
-  border: 1px solid #3664fc;
+  border: 1px solid #3a3a3a;
   white-space: nowrap;
 }
 
 .pricing-table .price-column .btn-box .btn-go:hover {
-  color: #3664fc;
+  color: #3a3a3a;
   background: none;
-  border: 1px solid #3664fc;
+  border: 1px solid #3a3a3a;
   -webkit-transition-duration: 600ms;
           transition-duration: 600ms;
 }
