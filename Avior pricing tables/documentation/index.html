@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AVIOR Modern pricing tables collection</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/vendor/uikit.min.css">
+    <link rel="stylesheet" href="css/vendor/slideshow.min.css">
+    <link rel="stylesheet" href="css/vendor/dotnav.min.css">
+
+    <link rel="stylesheet" href="css/vendor/doc.css">
+</head>
+
+<body class="body">
+
+    <header>
+        <div class="uk-container-center uk-container">
+            <h2 class="logo">AVIOR</h2>
+            <h3>AVIOR Modern pricing tables</h3>
+        </div>
+    </header>
+
+    <div class="uk-container uk-container-center uk-margin-large-bottom">
+
+        <div class="uk-grid" data-uk-grid-margin>
+            <div class="uk-width-medium-1-4 sidebar-menu">
+                <div data-uk-sticky="{top:80}">
+                    <ul class="uk-nav uk-nav-side" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true}">
+                        <li class="uk-active"><a href="#getstarted">Get Started Now</a></li>
+                        <li class=""><a href="#folderstructure">Folder Structure</a></li>
+                        <li class=""><a href="#htmlstructure">HTML Page Markup</a></li>
+                        <li class=""><a href="#buttonsoverview">Tables Overview</a></li>
+                        <li class=""><a href="#howtoaddbutton">How to Add Table?</a></li>
+                        <li class=""><a href="#support">Support Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="uk-width-medium-3-4">
+
+                <div id="getstarted">
+                    <h1 class="uk-margin-small-bottom">AVIOR Modern pricing tables collection</h1>
+                    <p class="uk-text-large uk-margin-top-remove uk-margin-large-bottom">The
+                        Documentation<sup>v.1.0</sup></p>
+                    <ul class="uk-list uk-list-striped uk-margin-large-top">
+                        <li><strong>Created:</strong>05 Sep, 2020</li>
+                        <li><strong>By:</strong> AviorCode</li>
+                        <li><strong>Profile:</strong> <a
+                                href="#"
+                                target="_blank">AviorCode</a></li>
+                        <li><strong>Email:</strong> avior@frappypie.com</li>
+                    </ul>
+                </div>
+
+                <div id="folderstructure">
+                    <h2>Folder Structure</h2>
+                    <p>Folder structure of the AviorCode pricing tables. See the attachment for more details</p>
+                    <div class="uk-overflow-container uk-margin-large-bottom">
+                        <table class="uk-table uk-table-striped uk-text-nowrap">
+                            <thead>
+                                <tr>
+                                    <th>Folder</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>/sources</code></td>
+                                    <td>Contains all source files including CSS/scss, html files.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/scss</code></td>
+                                    <td>Contains scss files.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/css</code></td>
+                                    <td>Contains main.css file.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <img src="images/folder_structure.png" alt="Folder Structure">
+                </div>
+
+                <div id="htmlstructure">
+                    <h2>HTML Page Markup</h2>
+                    <p>First off, make sure you have a solid code editor, for example 
+                        <a href="https://code.visualstudio.com/">VS Code and install the plugin Live Scss Compiler for compiling the scss.</a>. You need to add the compiled 
+                        <mark>main.css</mark>
+                        <!-- <mark><a href="http://fontawesome.com/">font-awesome.min.css or CDN</a></mark>  -->
+                        to the header of your HTML5 document. And that's it!
+                    </p>
+                    <h3 class="tm-article-subtitle">Example</h3>
+                    <pre style="margin: 0; line-height: 125%">
+                        <span style="color: #BC7A00">&lt;!DOCTYPE html&gt;</span>
+                        <span style="color: #008000; font-weight: bold">&lt;html&gt;</span>
+                            <span style="color: #008000; font-weight: bold">&lt;head&gt;</span>
+                                <span style="color: #008000; font-weight: bold">&lt;title&gt;&lt;/title&gt;</span>
+                                <span style="color: #008000; font-weight: bold">&lt;link</span> <span style="color: #7D9029">rel=</span><span style="color: #BA2121">&quot;stylesheet&quot;</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;../main.css&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+                                <!-- <span style="color: #008000; font-weight: bold">&lt;link</span> <span style="color: #7D9029">rel=</span><span style="color: #BA2121">&quot;stylesheet&quot;</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;stylesheets/font-awesome.min.css&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span> -->
+                            <span style="color: #008000; font-weight: bold">&lt;/head&gt;</span>
+                            <span style="color: #008000; font-weight: bold">&lt;body&gt;</span>
+                                <!-- <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#1&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;fw-btn fw-basic fw-warning&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>BUTTON<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span> -->
+                                <span style="color: #008000; font-weight: bold">.</span>
+                                <span style="color: #008000; font-weight: bold">.</span>
+                                <span style="color: #008000; font-weight: bold">.</span>
+
+                                <script>
+                                    function htmlEntities(str) {
+                                        return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+                                    }
+                                    document.write(htmlEntities(`
+                                        <div class="pricing-table striped table-blue">
+                                            <div class="price-column">
+                                                <div class="header">
+                                                    <img class="column-img" src="assets/images/mountain.svg"/>
+                                                    <h2 class="column-heading">Basic</h2>
+                                                </div>
+                                                <div class="column-horizontal-gap"></div>
+                                                <div class="column-price">9<span>$</span></div>
+                                                <ul class="column-item-list">
+                                                    <li>Lorem ipsum dolor sit.</li>
+                                                    <li>Lorem ipsum dolor sit amet.</li>
+                                                    <li>Lorem, ipsum dolor.</li>
+                                                    <li>Lorem ipsum dolor sit.</li>
+                                                    <li>Lorem ipsum dolor sit amet.</li>
+                                                </ul>
+                                                <div class="btn-box">
+                                                    <a class="btn btn-go" href="#">BUY NOW</a>
+                                                </div>
+                                            </div>
+                                            <div class="price-column active">
+                                                <div class="header">
+                                                    <img class="column-img" src="assets/images/vectorpaint.svg"/>
+                                                    <h2 class="column-heading">Advance</h2>
+                                                </div>
+                                                <div class="column-horizontal-gap"></div>
+                                                <div class="column-price">39<span>$</span></div>
+                                                <ul class="column-item-list">
+                                                    <li>Lorem ipsum dolor sit.</li>
+                                                    <li>Lorem ipsum dolor sit amet.</li>
+                                                    <li>Lorem, ipsum dolor.</li>
+                                                    <li>Lorem ipsum dolor sit.</li>
+                                                    <li>Lorem ipsum dolor sit amet.</li>
+                                                </ul>
+                                                <div  class="btn-box">
+                                                    <a class="btn btn-go" href="#">BUY NOW</a>
+                                                </div>
+
+                                            </div>
+                                            <div class="price-column">
+                                                <div class="header">
+                                                    <img class="column-img" src="assets/images/train.svg"/>
+                                                    <h2 class="column-heading">Ultimate</h2>
+                                                </div>                
+                                                <div class="column-horizontal-gap"></div>
+                                                <div class="column-price">99<span>$</span></div>
+                                                <ul class="column-item-list">
+                                                    <li>Lorem ipsum dolor sit amet.</li>
+                                                    <li>Lorem ipsum dolor sit.</li>
+                                                    <li>Lorem, ipsum dolor.</li>
+                                                    <li>Lorem ipsum dolor sit.</li>
+                                                    <li>Lorem ipsum dolor sit amet.</li>
+                                                </ul>
+                                                <div class="btn-box">
+                                                    <a class="btn btn-go" href="#">BUY NOW</a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        .
+                                        .
+                                        .
+                                        .
+
+                                    `));
+                                </script>
+
+
+                            <span style="color: #008000; font-weight: bold">&lt;/body&gt;</span>
+                        <span style="color: #008000; font-weight: bold">&lt;/html&gt;</span>
+                    </pre>
+                    <p><strong>Note:</strong> You can chnage the design and color theme by just adding a single class .</p>
+                </div>
+
+                
+                <div id="buttonsoverview">
+                    <h2>Pricing tables Overview</h2>
+                    <p>Visit slideshow for awesome pricing table collection.</p>
+                    <div class="uk-slidenav-position" data-uk-slideshow="{autoplay:true}">
+                        <ul class="uk-slideshow">
+                            <li><img src="images/pre1.png" alt="preview"></li>
+                            <li><img src="images/pre2.png" alt="preview"></li>
+                            <li><img src="images/pre3.png" alt="preview"></li>
+                            <li><img src="images/pre4.png" alt="preview"></li>
+                            <li><img src="images/pre5.png" alt="preview"></li>
+                            <li><img src="images/pre6.png" alt="preview"></li>
+                            <li><img src="images/pre7.png" alt="preview"></li>
+                            <li><img src="images/pre8.png" alt="preview"></li>
+                            <li><img src="images/pre9.png" alt="preview"></li>
+                            <li><img src="images/pre10.png" alt="preview"></li>
+                            
+                        </ul>
+                        <ul class="uk-dotnav uk-position-bottom uk-flex-center">
+                            <li data-uk-slideshow-item="0"><a href=""></a></li>
+                            <li data-uk-slideshow-item="1"><a href=""></a></li>
+                            <li data-uk-slideshow-item="2"><a href=""></a></li>
+                            <li data-uk-slideshow-item="3"><a href=""></a></li>
+                            <li data-uk-slideshow-item="4"><a href=""></a></li>
+                            <li data-uk-slideshow-item="5"><a href=""></a></li>
+                            <li data-uk-slideshow-item="6"><a href=""></a></li>
+                            <li data-uk-slideshow-item="7"><a href=""></a></li>
+                            <li data-uk-slideshow-item="8"><a href=""></a></li>
+                            <li data-uk-slideshow-item="9"><a href=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="howtoaddbutton">
+                    <h2>How to Add Table?</h2>
+                    <p>Hey! you can add table easily. so please follow these step and screenshot.</p>
+                    <ol>
+                        <li>At first you go to the source.</li>
+                        <li>Then open all-pricing-tables.html on editor (example: notepad++, VS Code etc)</li>
+                        <li>
+                            <p>Suppose you want to a add basic pricing table on your project just add the following code in the body.</p>
+                            <h3 class="tm-article-subtitle">Example</h3>
+                            <pre>
+            <span style="color: #008000; font-weight: bold">&lt;body&gt;</span>
+                    <span style="color: #008000; font-weight: bold">...</span>
+
+                        <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #BA2121">class="pricing-table"</span> <span style="color: #008000; font-weight: bold">&gt;</span>
+                        
+                            <span style="color: #008000; font-weight: bold">&lt;div <span style="color: #BA2121">class="price-column" </span>&gt;</span>
+                                <span style="color: #008000; font-weight: bold">&lt;div <span style="color: #BA2121">class="header"</span>&gt;</span>
+                                    <span style="color: #008000; font-weight: bold">&lt;img <span style="color: #BA2121">class="column-img"</span> src="assets/images/mountain.svg"/&gt;
+                                    <span style="color: #008000; font-weight: bold">&lt;h2 <span style="color: #BA2121">class="column-heading"</span>&gt;Basic&lt;/h2&gt;</span>
+                                <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+                                <span style="color: #008000; font-weight: bold">&lt;div <span style="color: #BA2121">class="column-horizontal-gap"</span>&gt;&lt;/div&gt;</span>
+                                <span style="color: #008000; font-weight: bold">&lt;div <span style="color: #BA2121">class="column-price"</span>&gt;9&lt;span&gt;$&lt;/span&gt;&lt;/div&gt;</span>
+                                <span style="color: #008000; font-weight: bold">&lt;ul <span style="color: #BA2121">class="column-item-list"</span>&gt;</span>
+                                    <span style="color: #008000; font-weight: bold">&lt;li&gt;Lorem ipsum dolor sit.&lt;/li&gt;</span>
+                                    <span style="color: #008000; font-weight: bold">&lt;li&gt;Lorem ipsum dolor sit amet.&lt;/li&gt;</span>
+                                    <span style="color: #008000; font-weight: bold">&lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;</span>
+                                    <span style="color: #008000; font-weight: bold">&lt;li&gt;Lorem ipsum dolor sit.&lt;/li&gt;</span>
+                                    <span style="color: #008000; font-weight: bold">&lt;li&gt;Lorem ipsum dolor sit amet.&lt;/li&gt;</span>
+                                <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+                                <span style="color: #008000; font-weight: bold">&lt;div <span style="color: #BA2121">class="btn-box"</span>&gt;</span>
+                                    <span style="color: #008000; font-weight: bold">&lt;a <span style="color: #BA2121">class="btn btn-go"</span> href="#"&gt;BUY NOW&lt;/a&gt;</span>
+                                <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+                            <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+
+                        <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+
+                    <span style="color: #008000; font-weight: bold">...</span>
+            <span style="color: #008000; font-weight: bold">&lt;/body&gt;</span>
+                            </pre>
+                            <h3 class="tm-article-subtitle">Options Uses</h3>
+                            <div class="uk-overflow-container uk-margin-large-bottom">
+                                <table class="uk-table uk-table-striped uk-text-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>pricing-table</code></td>
+                                            <td>Base class for pricing tables</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>rounded</code></td>
+                                            <td>Changes the tables style from squre edges to rounded.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>highlighted</code></td>
+                                            <td>Changes the tables style from normal to hightlighting gloss.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>striped</code></td>
+                                            <td>Changes the table list style to striped.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>text-only</code></td>
+                                            <td>Need to remove icon before using this.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>table-icons</code></td>
+                                            <td>Works whlie using the icon in table lists.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>active</code></td>
+                                            <td>Highlight the active column with primary color.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>table-red</code></td>
+                                            <td>Changes the color theme of tables to red.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>table-green</code></td>
+                                            <td>Changes the color theme of tables to green.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>table-blue</code></td>
+                                            <td>Changes the color theme of tables to blue.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>table-dark</code></td>
+                                            <td>Changes the color theme of tables to dark.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>table-yellow</code></td>
+                                            <td>Changes the color theme of tables to yellow.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>table-purple</code></td>
+                                            <td>Changes the color theme of tables to purple.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p><strong>Note:</strong> As same way you can add any table style to your project.<p>
+                        </li>
+                        <li>Finally just save it and view in your browser. Now you are done.</li>
+                    </ol>
+                </div>
+               
+                <div id="support">
+                    <h2>Support Policy</h2>
+                    <p>Dear sir, <br>if you face problems with the installation or customization of our product please do
+                        not hesitate to contact with us. We will try to best support for you :)</p>
+                    <p>
+                        <strong>Email:</strong> <a href="mail:mail">avior@frappypie.com</a>
+                    </p>
+                </div>
+
+                <div class="welcome">
+                    <p>Thanks for visiting AviorCode pricing tables documentation</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- js -->
+    <script src="js/jquery.js"></script>
+    <script src="js/vendor/uikit.min.js"></script>
+    <script src="js/vendor/sticky.js"></script>
+    <script src="js/vendor/slideshow.min.js"></script>
+</body>
+
+</html>
