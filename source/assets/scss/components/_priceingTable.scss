@@ -2,65 +2,15 @@
 /* 
 Pricing table
 =============================
-*/
-
-$primary:#3a3a3a;
-$primary-hover:#b8b8b8;
-$primary-hover-active:#272727;
-$primary-active-highlight:#969696;
-$primary-pin:#7effa0;
-
-$dark-primary:#3a3a3a;
-$dark-primary-hover:#b8b8b8;
-$dark-primary-hover-active:#272727;
-$dark-primary-active-highlight:#969696;
-$dark-primary-pin:#7effa0;
-
-$purple-primary:#b00cd1;
-$purple-primary-hover:#e693f7;
-$purple-primary-hover-active:#84099c;
-$purple-primary-active-highlight:#e366fc;
-$purple-primary-pin:#7effa0;
-
-$green-primary:#0fdf1a;
-$green-primary-hover:#b1fab5;
-$green-primary-hover-active:#0dc416;
-$green-primary-active-highlight:#72f779;
-$green-primary-pin:#7effa0;
-
-$yellow-primary:#ffd710;
-$yellow-primary-hover:#faeca6;
-$yellow-primary-hover-active:#ddbb12;
-$yellow-primary-active-highlight:#f7e383;
-$yellow-primary-pin:#7effa0;
-
-$blue-primary:#3664fc;
-$blue-primary-hover:#87a2fc;
-$blue-primary-hover-active:#2a4ec7;
-$blue-primary-active-highlight:#6588fc;
-$blue-primary-pin:#7effa0;
-
-$red-primary:#ff5757;
-$red-primary-hover:#f3caca;
-$red-primary-hover-active:#d24040;
-$red-primary-active-highlight:#fd7575;
-$red-primary-pin:#7effa0;
-
-$white:#fff;
-$black:#000;
-$dark:#333;
-$light:#efefef;
-$grey-100:#ccc;
-
-
-
+*/ 
+  
 .pricing-table{
     display: flex;
     // flex-wrap: wrap;
     background:$white;
-    width: 90%;
-    margin: auto;
-    margin-top: 30px;
+    width: 100%;
+    // margin: auto;
+    margin-bottom: 30px;
     padding:20px;
     justify-content: center;
     align-content: center;
@@ -68,7 +18,398 @@ $grey-100:#ccc;
     0px 0px 50px rgb(155, 154, 154);
     box-sizing: border-box;
 
+    /* Color variants */
+    &.table-red{
+        &.rounded{
+            .price-column{
+                border:2px solid $red-primary;
+            }
+        }
 
+        &.highlighed{
+            .price-column{
+                &.active{
+                    .header::before{
+                        background:$red-primary-active-highlight;
+                    }
+                }
+            }
+        }
+
+        &.striped{
+            .price-column{
+                &.active{
+                    .column-item-list{
+                        li:nth-child(odd){
+                            background: $red-primary-active-highlight !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.text-only{
+            .price-column{
+                .header{
+                    background: $red-primary !important;
+                }
+            }
+        }
+       
+        .price-column{
+            &:hover{
+                background:$red-primary-hover;
+            }
+
+            &.active{
+                background:$red-primary;
+
+                &:hover{
+                    background:$red-primary-hover-active;
+                }
+                
+            }
+            .column-price{
+                color:$red-primary;
+            }
+            .btn-go{
+                background:$red-primary !important;
+                color:$white;
+                border:1px solid $red-primary !important;
+                &:hover{
+                    background:none !important;
+                    color:$red-primary !important;
+                }
+            }
+        }
+    }
+
+    &.table-yellow{
+        &.rounded{
+            .price-column{
+                border:2px solid $yellow-primary;
+            }
+        }
+
+        &.highlighed{
+            .price-column{
+                &.active{
+                    .header::before{
+                        background:$yellow-primary-active-highlight;
+                    }
+                }
+            }
+        }
+
+        &.striped{
+            .price-column{
+                &.active{
+                    .column-item-list{
+                        li:nth-child(odd){
+                            background: $yellow-primary-active-highlight !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.text-only{
+            .price-column{
+                .header{
+                    background: $yellow-primary !important;
+                }
+            }
+        }
+       
+        .price-column{
+            &:hover{
+                background:$yellow-primary-hover;
+            }
+
+            &.active{
+                background:$yellow-primary;
+
+                &:hover{
+                    background:$yellow-primary-hover-active;
+                }
+                
+            }
+            .column-price{
+                color:$yellow-primary;
+            }
+            .btn-go{
+                background:$yellow-primary !important;
+                color:$white;
+                border:1px solid $yellow-primary !important;
+                &:hover{
+                    background:none !important;
+                    color:$yellow-primary !important;
+                }
+            }
+        }
+    }
+
+    &.table-green{
+        &.rounded{
+            .price-column{
+                border:2px solid $green-primary;
+            }
+        }
+
+        &.highlighed{
+            .price-column{
+                &.active{
+                    .header::before{
+                        background:$green-primary-active-highlight;
+                    }
+                }
+            }
+        }
+
+        &.striped{
+            .price-column{
+                &.active{
+                    .column-item-list{
+                        li:nth-child(odd){
+                            background: $green-primary-active-highlight !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.text-only{
+            .price-column{
+                .header{
+                    background: $green-primary !important;
+                }
+            }
+        }
+       
+        .price-column{
+            &:hover{
+                background:$green-primary-hover;
+            }
+
+            &.active{
+                background:$green-primary;
+
+                &:hover{
+                    background:$green-primary-hover-active;
+                }
+                
+            }
+            .column-price{
+                color:$green-primary;
+            }
+            .btn-go{
+                background:$green-primary !important;
+                color:$white;
+                border:1px solid $green-primary !important;
+                &:hover{
+                    background:none !important;
+                    color:$green-primary !important;
+                }
+            }
+        }
+    }
+
+    &.table-purple{
+        &.rounded{
+            .price-column{
+                border:2px solid $purple-primary;
+            }
+        }
+
+        &.highlighed{
+            .price-column{
+                &.active{
+                    .header::before{
+                        background:$purple-primary-active-highlight;
+                    }
+                }
+            }
+        }
+
+        &.striped{
+            .price-column{
+                &.active{
+                    .column-item-list{
+                        li:nth-child(odd){
+                            background: $purple-primary-active-highlight !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.text-only{
+            .price-column{
+                .header{
+                    background: $purple-primary !important;
+                }
+            }
+        }
+       
+        .price-column{
+            &:hover{
+                background:$purple-primary-hover;
+            }
+
+            &.active{
+                background:$purple-primary;
+
+                &:hover{
+                    background:$purple-primary-hover-active;
+                }
+                
+            }
+            .column-price{
+                color:$purple-primary;
+            }
+            .btn-go{
+                background:$purple-primary !important;
+                color:$white;
+                border:1px solid $purple-primary !important;
+                &:hover{
+                    background:none !important;
+                    color:$purple-primary !important;
+                }
+            }
+        }
+    }
+
+    &.table-blue{
+        &.rounded{
+            .price-column{
+                border:2px solid $blue-primary;
+            }
+        }
+
+        &.highlighed{
+            .price-column{
+                &.active{
+                    .header::before{
+                        background:$blue-primary-active-highlight;
+                    }
+                }
+            }
+        }
+
+        &.striped{
+            .price-column{
+                &.active{
+                    .column-item-list{
+                        li:nth-child(odd){
+                            background: $blue-primary-active-highlight !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.text-only{
+            .price-column{
+                .header{
+                    background: $blue-primary !important;
+                }
+            }
+        }
+       
+        .price-column{
+            &:hover{
+                background:$blue-primary-hover;
+            }
+
+            &.active{
+                background:$blue-primary;
+
+                &:hover{
+                    background:$blue-primary-hover-active;
+                }
+                
+            }
+            .column-price{
+                color:$blue-primary;
+            }
+            .btn-go{
+                background:$blue-primary !important;
+                color:$white;
+                border:1px solid $blue-primary !important;
+                &:hover{
+                    background:none !important;
+                    color:$blue-primary !important;
+                }
+            }
+        }
+    }
+
+    &.table-dark{
+        &.rounded{
+            .price-column{
+                border:2px solid $dark-primary;
+            }
+        }
+
+        &.highlighed{
+            .price-column{
+                &.active{
+                    .header::before{
+                        background:$dark-primary-active-highlight;
+                    }
+                }
+            }
+        }
+
+        &.striped{
+            .price-column{
+                &.active{
+                    .column-item-list{
+                        li:nth-child(odd){
+                            background: $dark-primary-active-highlight !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.text-only{
+            .price-column{
+                .header{
+                    background: $dark-primary !important;
+                }
+            }
+        }
+       
+        .price-column{
+            &:hover{
+                background:$dark-primary-hover;
+            }
+
+            &.active{
+                background:$dark-primary;
+
+                &:hover{
+                    background:$dark-primary-hover-active;
+                }
+                
+            }
+            .column-price{
+                color:$dark-primary;
+            }
+            .btn-go{
+                background:$dark-primary !important;
+                color:$white;
+                border:1px solid $dark-primary !important;
+                &:hover{
+                    background:none !important;
+                    color:$dark-primary !important;
+                }
+            }
+        }
+    }
+
+    /* design variants */
     &.rounded{
         .price-column{
             border-radius: 10px;
@@ -265,7 +606,6 @@ $grey-100:#ccc;
                 font-size:20px;
             }
         }
-
         .column-item-list{
             padding: 10px;
             list-style: none;
@@ -316,7 +656,6 @@ $grey-100:#ccc;
             }
             
         }
-
         .column-horizontal-gap{
             min-height: 1px;
             width: 50%;
