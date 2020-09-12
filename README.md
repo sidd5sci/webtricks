@@ -6,11 +6,12 @@
 [![Build Status](https://travis-ci.org/tommyod/KDEpy.svg?branch=master)](https://travis-ci.org/tommyod/KDEpy)
 ## Live Demos
 
-* [Dark popup](https://sidd5sci.github.io/webtricks/popup.html)
+* [Dark popup](https://sidd5sci.github.io/webtricks/source/components/popups/popup.html)
 * [FW Slider](https://sidd5sci.github.io/fw_slider/)
-* [Pricing tables](https://sidd5sci.github.io/webtricks/pricing-table.html)
-* [Lists](https://sidd5sci.github.io/webtricks/lists.html)
-* [Products cards](https://sidd5sci.github.io/webtricks/cards.html)
+* [Pricing tables](https://sidd5sci.github.io/webtricks/source/components/pricing-tables/pricing-table.html)
+* [Lists](https://sidd5sci.github.io/webtricks/source/components/lists/lists.html)
+* [Products cards](https://sidd5sci.github.io/webtricks/source/components/product_cards/cards.html)
+* [Headers](https://sidd5sci.github.io/webtricks/source/components/headers/header.html)
 
 
 ## Licensing
